@@ -7,9 +7,12 @@
   body {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100vh;
     background-color: #f0f0f0;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
   }
   
   #container {
@@ -21,9 +24,12 @@
   }
   
   .square {
-    width: 32px;
-    height: 32px;
-    background-color: rebeccapurple;
-    outline: 0.5px solid white;
+    background-color: white;
+    outline: 1px solid #ddd;
+    flex: 0 0 auto;
   }
   
+
+  .square.hovered {
+    background-color: blueviolet;
+  }
